@@ -51,9 +51,11 @@ main =
  ```}
 //----------------1-2 with ts-----------------\\
 ```
+```
 function add(a: number, b: number) {
  return a + b;
 }
+
 function curryFunc(c: number)  {
  return function (a: number) {
      return function (b: number) {
@@ -102,6 +104,7 @@ const enum Shape {
   ): Shape[] {
     return [...new Array(volume)].map(() => generateShape())
   }
+```
 ```
 //------------------------------------------------- 3------------------------------------------------------\\
 type UnaryFunction<A, B> = (_: A) => B;
