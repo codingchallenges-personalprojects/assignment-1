@@ -1,6 +1,8 @@
 # assignment-1
+
 1-1
 // -----------Task 1-1 with Elm-------------\\
+```
 module Main exposing (main)
 
 import Browser
@@ -45,7 +47,8 @@ main =
         { init = initialModel
         , view = view
         , update = update
-        }
+ 
+ ```}
 //----------------1-2 with ts-----------------\\
 function add(a: number, b: number) {
  return a + b;
