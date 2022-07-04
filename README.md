@@ -48,9 +48,9 @@ main =
         , view = view
         , update = update
  
- ```}
-//----------------1-2 with ts-----------------\\
+}
 ```
+//----------------1-2 with ts-----------------\\
 ```
 function add(a: number, b: number) {
  return a + b;
@@ -67,7 +67,9 @@ add(1, 2);
 console.log(curryFunc(3));
 ```
 //----------------------2-1---------------------------\\
+```
 // pipeline definition
+```
 ```
 const isTextLongEnough: (text: string) => boolean =
   text => isGreaterThan5(increasedNum(getNumberOfCharacters(text)))
