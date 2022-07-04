@@ -50,6 +50,7 @@ main =
  
  ```}
 //----------------1-2 with ts-----------------\\
+```
 function add(a: number, b: number) {
  return a + b;
 }
@@ -62,9 +63,10 @@ function curryFunc(c: number)  {
 }
 add(1, 2);
 console.log(curryFunc(3));
-
+```
 //----------------------2-1---------------------------\\
 // pipeline definition
+```
 const isTextLongEnough: (text: string) => boolean =
   text => isGreaterThan5(increasedNum(getNumberOfCharacters(text)))
 
@@ -83,8 +85,9 @@ const isGreaterThan5 = (increasedNum: number): boolean => {
   }
   return false;
 };
-
+```
 //--------------------------2-2-------------------------------\\
+```
 const evenNumbers = [1, 2, 3, 4].filter(n => n % 2 === 0)
 // or the shorter version: [1, 2, 3, 4].filter(isEven)
 const enum Shape {
@@ -99,7 +102,7 @@ const enum Shape {
   ): Shape[] {
     return [...new Array(volume)].map(() => generateShape())
   }
-
+```
 //------------------------------------------------- 3------------------------------------------------------\\
 type UnaryFunction<A, B> = (_: A) => B;
 type BinaryFunction<A, B, C> = (_1: A, _2: B) => C;
@@ -110,3 +113,4 @@ const partialApplication = <A, B, C>(
 ): UnaryFunction<B, C> => {return(b:B): C => {
         return g(a,b)
 }};
+```
