@@ -88,7 +88,10 @@ const isGreaterThan5 = (increasedNum: number): boolean => {
   return false;
 };
 ```
+```
 //--------------------------2-2-------------------------------\\
+
+```
 ```
 const evenNumbers = [1, 2, 3, 4].filter(n => n % 2 === 0)
 // or the shorter version: [1, 2, 3, 4].filter(isEven)
